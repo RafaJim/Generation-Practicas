@@ -1,0 +1,103 @@
+body
+{
+    font-style: italic;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: gray;
+    color: white;
+    background-image: url("../images/steam.jpg");
+    background-size: 100%;
+    background-repeat: none;
+}
+
+
+/*clase
+.titulosSuperiores
+{
+    color:black;
+    /*background-color: green;
+    border-style: dashed;
+    text-align: center;
+    border-left-width: 650px;
+    border-right-width: 650px;
+    border-top-style: double;
+    border-bottom-style: double;
+    border-left-style: double;
+    border-right-style: double;//
+}*/
+
+h1
+{
+    color: yellow;
+    border-top: #000000;
+    border-bottom: #000000;
+    border-left: #000000;
+    border-right: #000000;
+    border-style: solid;
+    border-width: 5px;
+}
+
+/*etiqueta*/
+h2
+{
+    color: yellow;
+    border-top: blue;
+    border-bottom: blue;
+    border-left: blue;
+    border-right: blue;
+    border-style: solid;
+    border-width: 5px;
+}
+
+/*id*/
+/*#titulo2
+{
+    color:yellow;
+}*/
+
+#tablita, td, th
+{
+    border: 2px solid white;
+    align-content: right;
+}
+
+p
+{
+    border-top: blue;
+    border-bottom: blue;
+    border-left: blue;
+    border-right: blue;
+    border-style: solid;
+    border-width: 5px;
+    padding: 10px 10px 10px 10px;
+}
+div
+{
+    border-top: blue;
+    border-bottom: blue;
+    border-left: blue;
+    border-right: blue;
+    border-style: solid;
+    border-width: 5px;
+    border-radius: 30px;
+}
+
+#parrafo2
+{
+    margin-left: 30px;
+    margin-right: 300px;
+    border: 10px solid blue;
+    padding-left: 30px;
+    padding-right: 30px;
+    box-shadow: 10px 10px 5px 1px purple;
+}
+
+li
+{
+    
+}
+ul
+{
+    list-style: none;
+    /*list-style-type: square;*/
+}

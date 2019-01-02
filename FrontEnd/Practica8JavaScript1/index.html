@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h2>Practica 8 Javascript 1</h2>
+
+    <p onmouseover="alert('este es un lorem ipsum')">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia assumenda similique asperiores modi officiis exercitationem? Accusantium minus molestias illum corporis autem dolorem porro nostrum. Necessitatibus, aspernatur veniam? Numquam, debitis reiciendis.
+    </p>
+
+    <!--MAla practica-->
+    <p id="contenidos" style="border:thin solid silver" onmouseover="document.getElementById('contenidos').style.borderColor='red';" onmouseout="document.getElementById('contenidos').style.borderColor='silver';">
+        [DOCUMENT]Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam laudantium, obcaecati assumenda beatae modi dolore ea earum eum, fuga impedit aliquam nobis sequi laborum quis libero labore aut tempora! Sequi.
+    </p>
+    
+    <!--MAla practica-->
+    <p style="border:thin solid silver" onmouseover="this.style.borderColor='red';" onmouseout="this.style.borderColor='silver';">
+        [THIS] Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam laudantium, obcaecati assumenda beatae modi dolore ea earum eum, fuga impedit aliquam nobis sequi laborum quis libero labore aut tempora! Sequi.
+    </p>
+
+    <!--MAla practica-->
+    <p style="border:thin solid silver" onmouseover="resalta(this)" onmouseout="resalta(this)">
+        [CASE]Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam quaerat ipsam, quis nisi neque facilis sint error adipisci suscipit similique possimus accusamus nesciunt tempora voluptatem, non maiores architecto quas voluptatum!
+    </p>
+
+    <p>
+        <input type="button" id="btnPresioname" value="onclick" onclick="alert('Este es un test');">
+        <input id="btnAlertame" type="button" value="Presioname">
+        <!--<input type="button" id="btnPresioname2" value="onmouseover" onmouseover="alert('hola');">
+        <input type="button" id="btnPresioname3" value="onmouseout" onmouseout="alert('hola');">
+        <input type="button" id="btnPresioname4" value="onsubmit" onsubmit="alert('hola');">-->
+    </p>
+    
+    <script>
+        function resalta(elemento) 
+        {
+            switch(elemento.style.borderColor) 
+            {
+                case 'silver':
+                case 'silver silver silver silver':
+                case '#c0c0c0':
+                elemento.style.borderColor = 'black';
+                break;
+                case 'black':
+                case 'black black black black':
+                case '#000000':
+                elemento.style.borderColor = 'silver';
+                break;
+            }
+            return;
+        }
+    </script>
+    <script src="scripts/jquery-3.3.1.min.js"></script>
+    <script src="scripts/bootstrap.min.js"></script>
+    <!--<script src="scripts/script.js"></script>-->
+    <!--<script src="scripts/script2.js"></script>-->
+    <script src="scripts/script3.js"></script>
+</body>
+</html>

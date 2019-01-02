@@ -1,0 +1,21 @@
+h2
+{
+    color: blue;
+}
+
+#apple
+{
+    width: 100%; 
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+}
+
+#contenido
+{
+    width: 100%; 
+    height: 100%;
+    z-index: 1;
+    /*color: white;*/
+
+}

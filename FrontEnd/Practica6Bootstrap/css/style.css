@@ -1,0 +1,61 @@
+body
+{
+    background-color: #cccccc;
+}
+
+h2
+{
+    color: blue;
+}
+
+h3
+{
+    color: red;
+}
+
+ul
+{
+    list-style: none;
+}
+
+header
+{
+    background-color: aquamarine;
+}
+
+nav
+{
+    background-color: darkkhaki;
+}
+
+aside
+{
+    background-color: grey;
+}
+
+section
+{
+    background-color: goldenrod;
+}
+
+article
+{
+    background-color: indianred;
+}
+
+div
+{
+    background-color: burlywood;
+}
+
+footer
+{
+    background-color: yellowgreen;
+}
+
+#menuHorizontal li
+{
+    display: inline;
+    margin-right: 135px;
+}
+

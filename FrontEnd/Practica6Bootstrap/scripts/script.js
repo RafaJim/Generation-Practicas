@@ -1,0 +1,3 @@
+//comentario
+/*comentaio*/
+alert('Test');

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Test Formularios</title>
+</head>
+<body>
+    <!--Mala practica-->
+    <h3>Introduce tus datos personales</h3>
+    <form action="servidor.html" method="post">
+        <p>
+            Nombre: <input type="text" name="txtNombre" id="txtNombre">
+        </p>
+        <p>
+            <input type="submit" value="Da click">
+        </p>
+    </form>
+
+    <!--Buena practica-->
+    <h3>
+        Introduce tus otros datos personales
+    </h3>
+    <form action="servidor2.html" method="post">
+        <p>
+            <label id="txtNombre2" for="txtNombre2">Introduce tu nombre: </label>
+            <input type="text" name="txtNombre2" id="txtNombre2" placeholder="Introduce tu nombre" autofocus required>
+           <!-- <input type="submit" value="Guarda datos">-->
+        </p>
+        <p>
+            <label for="numTelefono">Introduce tu telefono: </label>
+            <input type="tel" name="numTelefono" id="numTelefono" placeholder="Introduce tu numero" required>
+            <!--<input type="submit" value="Guarda datos">-->
+        </p>
+        <p>
+            <label for="numBuscar">Introduce tu busqueda: </label>
+            <input type="search" name="numBuscar" id="numBuscar" placeholder="Intruducir busqueda" required>
+            <!--<input type="submit" value="Buscar">-->
+        </p>
+        <p>
+            <label for="txtUrl">Introduce URL: </label>
+            <input type="url" name="txtUrl" id="txtUrl" placeholder="Intruducir busqueda" required>
+            <!--<input type="submit" value="Buscar Url">-->
+        </p>
+        <p>
+            <label for="txtEmail">Introduce tu Email: </label>
+            <input type="email" name="txtEmail" id="txtEmail" placeholder="Intruducir tu Email" required>
+            <!--<input type="submit" value="Aceptar">-->
+        </p>
+        <p>
+            <label for="dateTime">Introduce fecha y hora: </label>
+            <input type="datetime" name="dateTime" id="dateTime" placeholder="Intruducir fecha y hora" required>
+            <!--<input type="submit" value="Aceptar">-->
+        </p>
+        <p>
+            <label for="date">Introduce tu fecha: </label>
+            <input type="date" name="date" id="date" required>
+            <!--<input type="submit" value="Aceptar">-->
+        </p>
+        <p>
+            <label for="txtMonth">Introduce mes: </label>
+            <input type="month" name="txtMonth" id="txtMonth" placeholder="Intruducir Mes" required>
+            <!--<input type="submit" value="Aceptar">-->
+        </p>
+        <p>
+            <label for="txtWeek">Introduce semana: </label>
+            <input type="week" name="txtWeek" id="txtWeek" placeholder="Intruducir semana" required>
+            <!--<input type="submit" value="Aceptar">-->
+        </p>
+        <p>
+            <label for="numTime">Introduce hora: </label>
+            <input type="time" name="numTime" id="numTime" required>
+            <!--<input type="submit" value="Aceptar">-->
+        </p>
+        <p>
+            <label for="dateTimeLocal">Introduce hora local: </label>
+            <input type="datetime-local" name="dateTimeLocal" id="dateTimeLocal" placeholder="Intruducir hora local" required>
+            <!--<input type="submit" value="Aceptar">-->
+        </p>
+        <p>
+            <label for="number">Selleciona un rango: </label>
+            <input type="number" name="number" id="number" placeholder="Intruducir numero" required>
+            <!--<input type="submit" value="Aceptar">-->
+        </p>
+        <p>
+            <label for="range">Ajusta un rango: </label>
+            <input type="range" name="range" id="range" required>
+            <!--<input type="submit" value="Aceptar">-->
+        </p>
+        <p>
+            <label for="color">Ajusta un color: </label>
+            <input type="color" name="color" id="color" required>
+            <!--<input type="submit" value="Aceptar">-->
+        </p>
+        <input type="submit" value="Aceptar">
+    </form>
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <!--<p>tel: <input type="tel" /></p>
+    <p>search: <input type="search" /></p>
+    <p>url: <input type="url" /></p>
+    <p>email: <input type="email" /></p>
+    <p>datetime: <input type="datetime" /></p>
+    <p>date: <input type="date" /></p>
+    <p>month: <input type="month" /></p>
+    <p>week: <input type="week" /></p>
+    <p>time: <input type="time" /></p>
+    <p>datetime-local: <input type="datetime-local" /></p>
+    <p>number: <input type="number" /></p>
+    <p>range: <input type="range" /></p>
+    <p>color: <input type="color" /></p>-->
+
+</body>
+</html>

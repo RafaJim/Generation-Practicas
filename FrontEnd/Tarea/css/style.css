@@ -1,0 +1,15 @@
+body
+{
+    font-weight: bold;
+    background-color: grey;
+}
+
+header
+{
+    background-color: aqua;
+}
+
+.container
+{
+    background-color: burlywood;
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h2>Formularios Bootstrap</h2>
+
+    <form action="" method="post">
+        <div class="form-group">
+            <p>
+            <label for="txtNombre">Introduce tu nombre</label>
+            <input type="text" class="form-control" id="txtNombre" name="txtNombre">
+            </p>
+
+            <p>
+            <label for="txtApellido">Introduce tu apellido</label>
+            <input type="text" class="form-control" id="txtApellido" name="txtApellido">
+            </p>
+
+            <p>
+            <input type="submit" class="btn btn-primary" value="Da clic">
+            <input type="submit" class="btn btn-secondary" value="Da clic">
+            <input type="submit" class="btn btn-success" value="Da clic">
+            <input type="submit" class="btn btn-danger" value="Da clic">
+            <input type="submit" class="btn btn-warning" value="Da clic">
+            </p>
+        </div>
+    </form>
+
+    <table class="table table-condensed table-hover">
+        <thead>
+            <tr class="table-active">
+                <th>Encabezado 1</th><th>Encabezado 2</th><th>Encabezado 3</th>
+            </tr>
+        </thead>
+        <tbody>
+                <tr><td class="table-success">Informacion 1</td><td>Informacion 1</td><td><a href="http://www.google.com">Google</a></td></tr>
+                <tr><td>Informacion 2</td><td>Informacion 2</td><td>Informacion 2</td></tr>
+                <tr class="table-active"><th>Titulo 2</th><th>Titulo 2</th><th>Titulo 2</th></tr>
+                <tr class="table-warning">
+                    <td>
+                        <label for="txtTableNombre">Introduce tu nombre:</label>
+                    </td>
+                    <td>
+                        <input type="text" id="txtTableNombre" placeholder="Introduce tu nombre">
+                    </td>
+                    <td>
+                        <input type="submit" value="Guardar nombre">
+                    </td>
+                </tr>
+                <tr><td>Informacion 4</td><td>Informacion 4</td><td>Informacion 4</td></tr>
+        </tbody>
+        <tfoot>
+            <tr><td>Pie 1</td><td>Pie 2</td><td>Pie 3</td></tr>
+        </tfoot>
+    </table>
+    
+    <script src="scripts/bootstrap.min.js"></script>
+    <script src="scripts/jquery-3.3.1.min.js"></script>
+    <script src="scripts/script.js"></script>
+</body>
+</html>
